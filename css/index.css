@@ -39,7 +39,7 @@
 .all_turtle {
     position: relative;
     top: -250px;
-    z-index: -2;
+    z-index: 2;
 }
 
 .turtle {

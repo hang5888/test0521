@@ -6,10 +6,14 @@ footer {
     text-align: left;
 }
 
+.contact .logo {
+    width: 35%;
+}
+
 .footer_top {
     color: white;
     margin: 0px auto;
-    
+
 }
 
 footer h3 {
@@ -20,6 +24,14 @@ footer table p {
     font-size: 25px;
 }
 
+.contact h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.unit h3 {
+    margin-bottom: 30px;
+}
 
 .footer_top p {
     margin: 0px;
@@ -28,7 +40,6 @@ footer table p {
 
 footer .unit img {
     padding-bottom: 20px;
-    width: auto;
 }
 
 .footrer_bottom {
@@ -39,15 +50,28 @@ footer .unit img {
     text-align: center;
 }
 
+.phone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact .line,
+.unit .line {
+    border-left: 1px white solid;
+    padding-left: 50px;
+}
+
 @media (max-width:821px) {
 
-    .department{
+    .department {
         text-align: center;
     }
-    .department div{
+
+    .department div {
         margin-top: 20px;
     }
-    .NFUSR-text{
+
+    .NFUSR-text {
         text-align: center;
     }
 
@@ -63,8 +87,20 @@ footer .unit img {
     footer h3 {
         font-size: 35px;
     }
-    
+
     footer table p {
         font-size: 20px;
+    }
+    .contact .logo {
+        width: 50%;
+    }
+    .logo_div{
+        text-align: center;
+    }
+}
+
+@media (max-width:921px) {
+    .contact .logo {
+        width: 40%;
     }
 }
