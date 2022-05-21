@@ -1,0 +1,322 @@
+/*標題*/
+.title {
+
+    position: relative;
+    -webkit-text-stroke: 2px #2D82B7;
+}
+
+.title img {
+    width: 100%;
+    height: auto;
+}
+
+.title .school {
+    opacity: 1;
+}
+
+.title div {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    transform: translate(0%, 0%);
+}
+
+.title h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.light {
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.5em 0.5em 0.5em
+}
+
+/*介紹*/
+.introduce {
+    margin: 0px auto;
+    width: 45%;
+    background-color: #FFB42D;
+    position: relative;
+    top: -150px;
+    border-radius: 25px;
+}
+
+.introduce .img {
+    width: 40%;
+}
+
+.introduce .img img {
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.introduce .text {
+    width: 59%;
+    padding: 50px;
+}
+
+.introduce .text p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.real_histroy {
+    text-align: center;
+    padding: 50px;
+}
+
+.real_histroy h1 {
+    color: white;
+    background-color: #2D82B7;
+    display: inline-block;
+    padding: 10px 50px 10px 50px;
+}
+
+.real_histroy p {
+    text-align: left;
+    color: #2D82B7;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.real_histroy .infor {
+    margin: 50px 0 100px 0;
+}
+
+/*歷史*/
+.histroy {
+    background-color: #ffb52d40;
+    text-align: center;
+}
+
+.histroy .img {
+    text-align: right;
+}
+
+.histroy .text {
+    text-align: center;
+    font-size: 20px;
+    color: #2D82B7;
+    font-weight: 600;
+}
+
+.histroy .text h2 {
+    display: inline-block;
+    border-left: solid 3px #2D82B7;
+    border-right: solid 3px #2D82B7;
+    font-weight: 600;
+    margin: 50px auto;
+    padding: 10px 50px 10px 50px;
+}
+
+.histroy .text table {
+    margin: 30px;
+}
+
+.histroy .text .with{
+    width: 15%;
+}
+
+.histroy .text p {
+    text-align: left;
+}
+
+.histroy_button {
+    text-align: center;
+    padding: 50px;
+}
+
+.histroy_button button {
+    font-size: 30px;
+    border-radius: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid #2D82B7;
+    color: #2D82B7;
+}
+
+
+
+/*地圖*/
+.map_text .h1 {
+    margin: 100px;
+    text-align: left;
+}
+
+.map_text h1 {
+    font-size: 30px;
+}
+
+.map_text i {
+    font-size: 40px;
+}
+
+.map {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin: auto;
+    height: auto;
+}
+
+.map p {
+    display: inline-block;
+    background-color: black;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form {
+    width: 60%;
+    margin: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.form p {
+    letter-spacing: 2px;
+    font-size: 1em;
+}
+
+.infornation {
+    background-color: #00000015;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    padding: 50px;
+}
+
+.infornation h1 {
+    font-size: 40px;
+}
+
+.infornation p {
+    margin: 0px;
+}
+
+.infornation a {
+    margin: 0px;
+    color: black;
+}
+
+@media (max-width: 1300px) {
+    .introduce {
+        margin: 20px auto;
+        width: 80%;
+        top: 0px;
+        border-radius: 25px;
+    }
+
+    .introduce .text {
+        width: 60%;
+    }
+
+    .introduce .text p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .histroy .text .with{
+        width: 20%;
+    }
+}
+
+@media (max-width: 821px) {
+    .title {
+        position: relative;
+        -webkit-text-stroke: 0.5px #2D82B7;
+    }
+
+    .introduce {
+        margin: 20px auto;
+        width: 90%;
+        top: 0px;
+        border-radius: 25px;
+    }
+
+    .introduce .img {
+        width: 90%;
+    }
+
+
+    .introduce .text {
+        width: 100%;
+    }
+
+
+
+    .feature .img {
+        width: 100%;
+        margin: 0px auto;
+        position: relative;
+        top: -150px;
+    }
+
+    .feature .img div {
+        width: 33%;
+        padding: 0px;
+    }
+
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .text,
+    .image,
+    .map,
+    .form {
+        width: 100%;
+    }
+
+    .title p {
+        font-size: 10px;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+
+    .image img {
+        width: 350px;
+    }
+
+    .form p {
+        font-size: 0.75em;
+    }
+
+    .title .temple {
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        transform: translate(0%, 0%);
+    }
+
+    .real_histroy {
+        text-align: center;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .map_text .h1 {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .histroy .text .with{
+        width: 23%;
+    }
+    .histroy .text table {
+        margin: 0px;
+    }
+}

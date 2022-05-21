@@ -1,0 +1,291 @@
+.title {
+    position: relative;
+    -webkit-text-stroke: 2px #2D82B7;
+}
+
+.title img {
+    width: 100%;
+    height: auto;
+}
+
+.title .school {
+    opacity: 1;
+}
+
+.title div {
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    transform: translate(0%, 0%);
+}
+
+.title .temple {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d4d4d4;
+}
+
+.title h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.light {
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.5em 0.5em 0.5em
+}
+
+.dark {
+    color: #303030;
+    text-shadow: 0.3em 0.3em 0.2em white;
+}
+
+
+.image {
+    margin-top: 30px;
+    width: 65%;
+    height: auto;
+}
+
+.image img {
+    width: 500px;
+}
+
+.histroy {
+    background-color: #ffb52d40;
+}
+
+.histroy .title {
+    text-align: center;
+}
+
+.histroy .title h1 {
+    display: inline-block;
+    background-color: #2D82B7;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    margin: 60px;
+}
+
+.histroy_table {
+    font-size: 1.5em;
+}
+
+.histroy_table tr {
+    text-align: center;
+    border-left: 3px solid #2D82B7;
+}
+
+.year {
+    width: 10%;
+    color: #2D82B7;
+}
+
+.year h1 {
+    font-size: 3em;
+}
+
+.text {
+    width: 80%;
+    text-align: left;
+    padding-left: 120px;
+}
+
+.histroy_button {
+    text-align: center;
+    padding: 50px;
+}
+
+.histroy_button button {
+    font-size: 30px;
+    border-radius: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid #2D82B7;
+    color: #2D82B7;
+}
+
+.histroy_img {
+    position: relative;
+    left: 75%;
+    width: 25%;
+    top: -550px;
+}
+
+.histroy_img img {
+    width: 100%;
+    height: auto;
+}
+
+.map {
+    text-align: center;
+    width: 60%;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin: auto;
+    height: auto;
+    top: -300px;
+    position: relative;
+}
+
+.map p {
+    display: inline-block;
+    background-color: black;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+@media (max-width: 1300px) {
+    .histroy_img {
+        position: relative;
+        left: 0%;
+        width:100%;
+        height: auto;
+        top: 0px;
+        text-align: center;
+    }
+    
+    .histroy_img img {
+        width: 50%;
+        height: auto;
+    }
+    .map{
+        top: 0px;
+    }
+    .title {
+        position: relative;
+        -webkit-text-stroke: 0.5px #2D82B7;
+    }
+    .title div {
+        position: absolute;
+        top: 45%;
+        left: 13%;
+        transform: translate(0%, 0%);
+    }
+    .title h1 {
+        font-size: 40px;
+    }  
+    .title p {
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 821px) {
+
+    .title h1 {
+        font-size: 30px;
+    }  
+    .title p {
+        font-size: 10px;
+    }
+    
+    .introduce {
+        margin: 20px auto;
+        width: 90%;
+        background-color: #FFB42D;
+        position: relative;
+        top: 0px;
+        border-radius: 25px;
+    }
+
+    .introduce .img {
+        width: 90%;
+    }
+
+    .introduce .img img {
+        width: 100%;
+        margin: 20px;
+        border-radius: 25px;
+        border: 1px solid white;
+    }
+
+    .introduce .text {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .introduce .text p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .feature .img {
+        width: 100%;
+        margin: 0px auto;
+        position: relative;
+        top: -150px;
+    }
+    
+    .feature .img div {
+        width: 33%;
+        padding: 0px;
+    }
+
+
+    
+
+    .image,
+    .map {
+        width: 100%;
+    }
+
+    
+
+
+    .image img {
+        width: 350px;
+    }
+
+    p {
+        font-size: 0.75em;
+    }
+
+    .title .temple {
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        transform: translate(0%, 0%);
+    }
+
+    .histroy_table {
+        width: 90%;
+        margin: 0px auto;
+        font-size: 1.5em;
+    }
+    
+    .histroy_table tr {
+        text-align: center;
+        border-left: 3px solid #2D82B7;
+    }
+    .text {
+        width: 100%;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    
+    
+    .histroy_button {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .histroy_img img {
+        width: 90%;
+        height: auto;
+    }
+}

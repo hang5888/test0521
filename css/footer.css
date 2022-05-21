@@ -1,0 +1,70 @@
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1.25em;
+    background-color: #FFB42D;
+    text-align: left;
+}
+
+.footer_top {
+    color: white;
+    margin: 0px auto;
+    
+}
+
+footer h3 {
+    font-size: 35px;
+}
+
+footer table p {
+    font-size: 25px;
+}
+
+
+.footer_top p {
+    margin: 0px;
+    font-weight: 100 !important;
+}
+
+footer .unit img {
+    padding-bottom: 20px;
+    width: auto;
+}
+
+.footrer_bottom {
+    padding-top: 50px;
+    color: white;
+    margin: 0px auto;
+    width: 60%;
+    text-align: center;
+}
+
+@media (max-width:821px) {
+
+    .department{
+        text-align: center;
+    }
+    .department div{
+        margin-top: 20px;
+    }
+    .NFUSR-text{
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    .footer_top,
+    .footrer_bottom {
+        width: 100%;
+    }
+
+    footer h3 {
+        font-size: 35px;
+    }
+    
+    footer table p {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,290 @@
+/*標題*/
+.title {
+
+    position: relative;
+    -webkit-text-stroke: 2px #2D82B7;
+}
+
+.title img {
+    width: 100%;
+    height: auto;
+}
+
+.title .school {
+    opacity: 1;
+}
+
+.title div {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    transform: translate(0%, 0%);
+}
+
+.title .temple {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d4d4d4;
+}
+
+.title h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.light {
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.5em 0.5em 0.5em
+}
+
+/*介紹*/
+.introduce {
+    margin: 0px auto;
+    width: 45%;
+    background-color: #FFB42D;
+    position: relative;
+    top: -150px;
+    border-radius: 25px;
+}
+
+.introduce .img {
+    width: 40%;
+}
+
+.introduce .img img {
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.introduce .text {
+    width: 59%;
+    padding: 50px;
+}
+
+.introduce .text p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+/*歷史*/
+.histroy {
+    background-color: #ffb52d40;
+    text-align: center;
+}
+
+.histroy .img {
+    text-align: right;
+}
+
+.histroy .text {
+    text-align: center;
+    font-size: 25px;
+    color: #2D82B7;
+    font-weight: 600;
+}
+
+.histroy .text h2 {
+    display: inline-block;
+    border-left: solid 3px #2D82B7;
+    border-right: solid 3px #2D82B7;
+    font-weight: 600;
+    margin: 50px auto;
+    padding: 10px 50px 10px 50px;
+}
+
+.histroy .text p {
+    text-align: left;
+    padding: 50px;
+}
+
+.histroy_button {
+    text-align: center;
+    padding: 50px;
+}
+
+.histroy_button button {
+    font-size: 30px;
+    border-radius: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid #2D82B7;
+    color: #2D82B7;
+}
+
+
+
+/*地圖*/
+.map_text .h1 {
+    margin: 100px;
+    text-align: left;
+}
+
+.map_text h1 {
+    font-size: 30px;
+}
+
+.map_text i {
+    font-size: 40px;
+}
+
+.map {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin: auto;
+    height: auto;
+}
+
+.map p {
+    display: inline-block;
+    background-color: black;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form {
+    width: 60%;
+    margin: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.form p {
+    letter-spacing: 2px;
+    font-size: 1em;
+}
+
+@media (max-width: 1200px) {
+    .introduce {
+        margin: 20px auto;
+        width: 80%;
+        background-color: #FFB42D;
+        position: relative;
+        top: 0px;
+        border-radius: 25px;
+    }
+
+    .introduce .img {
+        width: 40%;
+    }
+
+    .introduce .img img {
+        width: 100%;
+        margin: 20px;
+        border-radius: 25px;
+        border: 1px solid white;
+    }
+
+    .introduce .text {
+        width: 60%;
+        padding: 50px;
+    }
+
+    .introduce .text p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 821px) {
+    .title {
+        position: relative;
+        -webkit-text-stroke: 0.5px #2D82B7;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .introduce{
+        width: 90%;
+    }
+
+    .text,
+    .image,
+    .map,
+    .form {
+        width: 100%;
+    }
+
+    .title p {
+        font-size: 10px;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+
+    .image img {
+        width: 350px;
+    }
+
+    .form p {
+        font-size: 0.75em;
+    }
+
+    .title .temple {
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        transform: translate(0%, 0%);
+    }
+
+    .map_text .h1 {
+        margin: 20px;
+        text-align: left;
+    }
+
+
+    .histroy_button {
+        text-align: center;
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .introduce {
+        margin: 20px auto;
+        width: 90%;
+        background-color: #FFB42D;
+        position: relative;
+        top: 0px;
+        border-radius: 25px;
+    }
+
+    .introduce .img {
+        width: 90%;
+    }
+
+    .introduce .img img {
+        width: 100%;
+        margin: 20px;
+        border-radius: 25px;
+        border: 1px solid white;
+    }
+
+    .introduce .text {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .introduce .text p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+}

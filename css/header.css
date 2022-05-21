@@ -1,0 +1,136 @@
+/*選單*/
+.bg-light {
+    background-color: #850925 !important;
+}
+
+.navbar li {
+    line-height: 100px;
+}
+
+.dropdown-menu li {
+    line-height: 70px !important;
+}
+
+.header_border {
+    width: 2px;
+    height: 45px;
+    background-color: white;
+    position: relative;
+    transform: translate(0%, 90%)
+}
+
+.nav-item {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar img {
+    width: 300px;
+    padding: 10px 50px;
+}
+
+.nav-item a,
+.dropdown-item a {
+    font-size: 25px;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.dropdown-item {
+    color: black !important;
+}
+
+/*選單觸碰被景色*/
+.nav-item a:hover {
+    color: #a02743;
+}
+.nav-item a:active{
+    color: #a02743;
+}
+
+/*下拉背景*/
+
+.dropdown-menu {
+    background-color: #a02743;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+/*下拉觸碰背景*/
+
+.dropdown-item:hover{
+    color: #a02743 !important;
+}
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+
+@media (max-width: 1400px) {
+    .nav-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-item {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header_border {
+        display: none;
+    }
+
+    .dropdown-menu {
+        background-color: #a02743 !important;
+    }
+
+    .dropdown-item {
+        color: white !important;
+    }
+}
+
+@media (max-width: 821px) {
+
+
+    .navbar img {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .nav-item {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+/*固定導覽列*/
+
+
+/*
+.navFixed {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    min-width: 100%;
+    opacity: 0.94;
+    transition: opacity .5s ease-out;
+}*/
+
+@media (max-width:800px) {
+    .header_border {
+        width: 0px;
+        height: 0px;
+    }
+}

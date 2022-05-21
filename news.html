@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-5.2.0/css/bootstrap.min.css" />
+    <!--自訂CSS-->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <!--END-->
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="./js/header.js"></script>
+
+    <title>石龜溪導覽 Shigui, Yunlin Dounan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!--選單-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="nav-link" href="./index.html">
+                    <img src="./images/Rectangle 41.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="header_border"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html">近期活動</a>
+                        </li>
+                        <div class="header_border"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                石龜溪景點
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./shigui/shop.html">石龜溪小舖</a></li>
+                                <li><a class="dropdown-item" href="./shigui/temple.html">石龜溪天后宮</a></li>
+                                <li><a class="dropdown-item" href="./shigui/shiguischool.html">石龜國小</a></li>
+                                <li><a class="dropdown-item" href="./shigui/rice.html">新大豐碾米廠</a></li>
+                                <li><a class="dropdown-item" href="./shigui/station.html">石龜車站</a></li>
+                                <li><a class="dropdown-item" href="./shigui/soysauce.html">新芳園醬油</a></li>
+                            </ul>
+                        </li>
+                        <div class="header_border"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                斗南景點
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./dounan/dadongschool.html">雲林縣大東國小</a></li>
+                                <li><a class="dropdown-item" href="./dounan/house.html">偶的家-戲偶原創園區</a></li>
+                            </ul>
+                        </li>
+                        <div class="header_border"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">小旅行預約系統</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <img width="100%" src="./images/new/Rectangle 42.svg" alt="">
+        <div class="img_title">
+            <h1>近期活動</h1>
+        </div>
+    </div>
+    <!--內文-->
+    <div class="slogan container">
+        <div class="row">
+            <div class="img col-lg-6">
+                <img src="./images/new/IMG20220304141346_7 1.svg" alt="">
+            </div>
+            <div class="text col-lg-6 align-self-center">
+                <p>小舖裡有石龜溪特色文創商品，以及擴大整修給小朋友的讀冊館，此外石龜溪小舖還會不定期舉辦小活動喔!期待您的參與!</p>
+            </div>
+        </div>
+    </div>
+    <div class="before">
+        <div class="event">
+            <div class="text-center">
+                <h3>往期活動</h3>
+            </div>
+            <hr>
+            <table>
+                <tr>
+                    <th class="number">
+                        <h1>01</h1>
+                    </th>
+                    <th>
+                        <a target="_blank" id="01_event_link" href="">
+                            <div class="card mb-3 ">
+                                <div class="row g-0">
+                                    <div class="col-lg-5">
+                                        <img id="01_event_image" class="img-fluid card-img" alt="...">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="01_event_title"></h5>
+                                            <p class="card-text" id="01_event_text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="number">
+                        <h1>02</h1>
+                    </th>
+                    <th>
+                        <a target="_blank" id="02_event_link">
+                            <div class="card mb-3 ">
+                                <div class="row g-0">
+                                    <div class="col-lg-5">
+                                        <img id="02_event_image" class="img-fluid card-img" alt="...">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="02_event_title"></h5>
+                                            <p class="card-text" id="02_event_text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="number">
+                        <h1>03</h1>
+                    </th>
+                    <th>
+                        <a target="_blank" id="03_event_link">
+                            <div class="card mb-3 ">
+                                <div class="row g-0">
+                                    <div class="col-lg-5">
+                                        <img id="03_event_image" class="img-fluid card-img" alt="...">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="03_event_title"></h5>
+                                            <p class="card-text" id="03_event_text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="number">
+                        <h1>04</h1>
+                    </th>
+                    <th>
+                        <a target="_blank" id="04_event_link">
+                            <div class="card mb-3 ">
+                                <div class="row g-0">
+                                    <div class="col-lg-5">
+                                        <img id="04_event_image" class="img-fluid card-img" alt="...">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="04_event_title"></h5>
+                                            <p class="card-text" id="04_event_text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row footer_top">
+                <div class="col-md-6">
+                    <h3>聯絡我們</h3>
+                    <table>
+                        <tr>
+                            <th>
+                                <i class="bi bi-telephone"></i>
+                            </th>
+                            <th>
+                                <p>0920-380225</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <i class="bi bi-pin-map-fill"></i>
+                            </th>
+                            <th>
+                                <p>63048雲林縣斗南鎮石龜里光天路76號</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <p>63048雲林縣斗南鎮石龜里光天路50號</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <p>(石龜社區活動中心)</p>
+                            </th>
+                        </tr>
+                    </table>
+                    <a target="_blank"
+                        href="https://www.facebook.com/%E7%9F%B3%E9%BE%9C%E6%BA%AA%E5%B0%8F%E9%8B%AA-108156371137715">
+                        <img src="./images/Group 16.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <h3>相關單位</h3>
+                    <div class="row department">
+                        <div class="col-md-6">
+                            <a href="https://www.facebook.com/%E7%9F%B3%E9%BE%9C%E7%A4%BE%E5%8D%80%E7%99%BC%E5%B1%95%E5%8D%94%E6%9C%83-100402583418147"
+                                target="_blank">
+                                <img width="100%" src="../images/index/Stone Turtle Community 2.svg" alt="">
+                            </a>
+
+                            <h4>石龜社區發展協會</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://usr.moe.gov.tw/" target="_blank">
+                                <img width="100%" src="./images/index/main-logo 1.svg" alt="">
+                            </a>
+
+                            <h4>教育部大學社區責任推動中心</h4>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-3">
+                            <a href="">
+                                <img width="100%" src="./images/NFUSR.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col align-self-center NFUSR-text">
+                            <h4>國立虎尾科技大學-大學社會責任實踐中心</h4>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="footrer_bottom">
+                <h4>國立虎尾科技大學文理學院 USR Team 石龜社區發展協會&copy;2020-2022.</h4>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/event.js"></script>
+
+
+
+
+
+</body>
+
+</html>

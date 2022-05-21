@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-5.2.0/css/bootstrap.min.css" />
+
+    <!--自訂CSS-->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!--END-->
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./new/left/iframe.txt">
+
+    <script>
+        var HTML_FILE_URL = '/new/left/text.txt';
+
+        
+
+        $(document).ready(function () {
+
+            $.get("./new/left/iframe.txt", function (data) {
+                $('#left-iframe').attr("src", data);
+            });
+            $.get("./new/left/text.txt", function (data) {
+                $("#left-text").html(data);
+            }, 'text');
+            jQuery.get("./new/left/title.txt", function (data) {
+                $('#left-title').html(data);
+            }, 'text');
+            jQuery.get('./new/left/link.txt', function (data) {
+                $("#left-link").attr("href", data);
+            });
+
+
+            $.get('./new/right/iframe.txt', function (data) {
+                $("#right-iframe").attr("src", data);
+            });
+            $.get('./new/right/text.txt', function (data) {
+                $("#right-text").html(data);
+            }, 'text');
+            $.get('./new/right/title.txt', function (data) {
+                $("#right-title").html(data);
+            }, 'text');
+            $.get('./new/right/link.txt', function (data) {
+                $("#right-link").attr("href", data);
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <title>石龜溪導覽 Shigui, Yunlin Dounan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body onload="readfile()">
+    <button id="123">123</button>
+    <script src="./js/news.js"></script>
+    <!--header-->
+    <header>
+        <!--選單-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="nav-link" href="./index.html">
+                    <img src="./images/Rectangle 41.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="header_border"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html">近期活動</a>
+                        </li>
+                        <div class="header_border"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                石龜溪景點
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./shigui/shop.html">石龜溪小舖</a></li>
+                                <li><a class="dropdown-item" href="./shigui/temple.html">石龜溪天后宮</a></li>
+                                <li><a class="dropdown-item" href="./shigui/shiguischool.html">石龜國小</a></li>
+                                <li><a class="dropdown-item" href="./shigui/rice.html">新大豐碾米廠</a></li>
+                                <li><a class="dropdown-item" href="./shigui/station.html">石龜車站</a></li>
+                                <li><a class="dropdown-item" href="./shigui/soysauce.html">新芳園醬油</a></li>
+                            </ul>
+                        </li>
+                        <div class="header_border"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                斗南景點
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./dounan/dadongschool.html">雲林縣大東國小</a></li>
+                                <li><a class="dropdown-item" href="./dounan/house.html">偶的家-戲偶原創園區</a></li>
+                            </ul>
+                        </li>
+                        <div class="header_border"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">小旅行預約系統</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <!-- 輪播圖 -->
+        <div class="images">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/banner/header02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner/header04.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner/header05.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner/header07.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div
+            style="position: absolute; width: 60%;height: 750px;z-index: -10;right: 0%;background: linear-gradient(140deg, transparent 750px, #FFB42D 0);">
+        </div>
+
+        <!--內文-->
+        <div class="container">
+            <div class="about ">
+                <h1 class="h1 fw-bold">關於我們</h1>
+                <p class="h3 fw-bold">此導覽系統為教育部計畫「深坑虎尾溪流域-他里霧平原螢光計畫」，石龜社區發展協會與國立虎尾科技大學文理學院USR團隊共同建置。</p>
+            </div>
+            <div class="VIDEO">
+                <h2 class="h3 fw-bold">VIDEO</h2>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/rEuWluN6B-U" title="YouTube video"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/a0qy80FJ3Jc" title="YouTube video"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/bjsxvNteBG4" title="YouTube video"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="position: absolute; width: 50%; top :270%;height: 600px;z-index: -10;left:  0%;background: linear-gradient(-145deg, transparent 600px, #ffb52d60 0);">
+            </div>
+
+            <div class="news">
+                <h2 class="h3 fw-bold">NEWS</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="left-iframe" width="560" height="314" style="border:none;overflow:hidden"
+                                scrolling="no" frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen="true"></iframe>
+                        </div>
+                        <h3 class="fw-bold" id="left-title"></h3>
+                        <p class="h5" id="left-text"></p>
+                        <a target="_blank" id="left-link"><small class="text-muted">點擊閱讀</small></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="right-iframe" width="500" height="374" style="border:none;overflow:hidden"
+                                scrolling="no" frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                        <h3 class="fw-bold" id="right-title"></h3>
+                        <p class="h5" id="right-text"></p>
+                        <a target="_blank" id="right-link"><small class="text-muted">點擊閱讀</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="all_turtle">
+            <div class="turtle">
+                <div>
+                    <h3 class="h1">石龜景點</h3>
+                </div>
+            </div>
+            <div class="container-fluid turtle_infor">
+                <h1 class="h1 fw-bold">石龜景點</h1>
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-6 turtle_img ">
+                        <a href="./shigui/shiguischool.html"><img src="./images/Group 20.svg" alt=""></a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 turtle_img ">
+                        <a href="./shigui/shop.html"><img src="./images/Group 21.svg" alt=""></a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 turtle_img ">
+                        <a href="./shigui/temple.html"><img src="./images/Group 22.svg" alt=""></a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 turtle_img ">
+                        <a href="./shigui/rice.html"><img src="./images/Group 23.svg" alt=""></a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 turtle_img ">
+                        <a href="./shigui/station.html"><img src="./images/Group 24.svg" alt=""></a>
+                    </div>
+                    <div class=" col-lg-2 col-md-4 col-6 turtle_img ">
+                        <a href="./shigui/soysauce.html ">
+                            <img src="./images/Group 28.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Dounan_background">
+            <div class="Dounan">
+                <h3 class="h1">斗南景點</h3>
+                <div class="row">
+                    <div class="col title">
+                        <a href="./dounan/dadongschool.html"><img src="./images/index/Group 70.svg" alt="shop"></a>
+                        <div>
+                            <p>雲林大東國民小學</p>
+                        </div>
+                    </div>
+                    <div class="col title">
+                        <a href="./dounan/house.html"><img src="./images/index/Group 71.svg" alt="shop"></a>
+                        <div>
+                            <p>偶的家-戲偶原創園區</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row footer_top">
+                <div class="col-md-6">
+                    <h3>聯絡我們</h3>
+                    <table>
+                        <tr>
+                            <th>
+                                <i class="bi bi-telephone"></i>
+                            </th>
+                            <th>
+                                <p>0920-380225</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <i class="bi bi-pin-map-fill"></i>
+                            </th>
+                            <th>
+                                <p>63048雲林縣斗南鎮石龜里光天路76號</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <p>63048雲林縣斗南鎮石龜里光天路50號</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <p>(石龜社區活動中心)</p>
+                            </th>
+                        </tr>
+                    </table>
+                    <a target="_blank"
+                        href="https://www.facebook.com/%E7%9F%B3%E9%BE%9C%E6%BA%AA%E5%B0%8F%E9%8B%AA-108156371137715">
+                        <img src="./images/Group 16.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <h3>相關單位</h3>
+                    <div class="row department">
+                        <div class="col-md-6">
+                            <a href="https://www.facebook.com/%E7%9F%B3%E9%BE%9C%E7%A4%BE%E5%8D%80%E7%99%BC%E5%B1%95%E5%8D%94%E6%9C%83-100402583418147"
+                                target="_blank">
+                                <img width="100%" src="../images/index/Stone Turtle Community 2.svg" alt="">
+                            </a>
+
+                            <h4>石龜社區發展協會</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://usr.moe.gov.tw/" target="_blank">
+                                <img width="100%" src="./images/index/main-logo 1.svg" alt="">
+                            </a>
+
+                            <h4>教育部大學社區責任推動中心</h4>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-3">
+                            <a href="">
+                                <img width="100%" src="./images/NFUSR.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col align-self-center NFUSR-text">
+                            <h4>國立虎尾科技大學-大學社會責任實踐中心</h4>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="footrer_bottom">
+                <h4>國立虎尾科技大學文理學院 USR Team 石龜社區發展協會&copy;2020-2022.</h4>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

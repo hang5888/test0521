@@ -1,0 +1,199 @@
+/* 標題 */
+.img_title {
+    text-align: right;
+    position: relative;
+    top: -200px;
+    right: 60%;
+    background-color: #FFB42D;
+}
+
+.img_title h1 {
+    font-size: 60px;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+/* 近期活動 */
+
+
+
+.slogan p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+
+
+.slogan img {
+    box-shadow: -50px 50px #FFB42D;
+    display: block;
+    width: 97%;
+}
+
+/* 表格 */
+.before {
+    margin-top: 100px;
+    background-color: #EDEDED;
+    padding-bottom: 100px;
+}
+
+.before h3 {
+    margin-top: 100px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+
+}
+
+.before hr {
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+.before_table {
+    text-align: right;
+}
+
+.event{
+    width: 55%;
+    margin: 0px auto;
+}
+
+table a {
+    color: black;
+}
+.card{
+    margin: 70px;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.number {
+    border-right: 3px solid #FFB42D;
+}
+
+.number h1 {
+    font-size: 80px;
+    margin-right: 50px;
+    color: #FFB42D;
+}
+
+.text {
+    padding: 15px;
+}
+
+.before_text {
+    margin: 20px;
+}
+
+
+
+.before_text .images {
+    text-align: right;
+}
+
+a{
+    text-decoration:none
+}
+@media (max-width:1560px) {
+    .event{
+        width: 65%;
+        margin: 0px auto;
+    }
+}
+@media (max-width:1250px) {
+    .event{
+        width: 85%;
+        margin: 0px auto;
+    }
+}
+
+
+/* col-md */
+@media (max-width:992px) {
+    .slogan .text {
+        margin-top: 50px;
+    }
+
+    .slogan .img {
+        text-align: center;
+    }
+    .event{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .before_text .images {
+        text-align: center;
+    }
+    .before{
+        margin-top: 0px;
+    }
+    .text h5{
+        text-align: center;
+    }
+    .card{
+        margin: 20px;
+    }
+}
+
+@media (max-width:821px) {
+    .img_title {
+        text-align: right;
+        top: -100px;
+        right: 70%;
+        background-color: #FFB42D;
+    }
+
+    .img_title h1 {
+        font-size: 30px;
+        padding: 10px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .slogan p {
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+        line-height: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+    .number h1 {
+        font-size: 60px;
+        margin-right: 10px;
+        color: #FFB42D;
+    }
+    .event{
+        width: 100%;
+        margin: 0px auto;
+    }
+}
+
+@media (max-width:600px) {
+    .img_title {
+    text-align: right;
+    top: -75px;
+    right: 50%;
+    background-color: #FFB42D;
+}
+
+.img_title h1 {
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+}
+}
+
