@@ -5,11 +5,11 @@ $.get("./new/left/iframe.txt", function (data) {
 $.get("./new/left/text.txt", function (data) {
     $("#left-text").html(data);
 }, 'text');
-jQuery.get("./new/left/title.txt", function (data) {
+$.get("./new/left/title.txt", function (data) {
     $('#left-title').html(data);
 }, 'text');
-jQuery.get('./new/left/link.txt', function (data) {
-    $("#left-link").attr("href", data);
+$.get('./new/left/link.txt', function (data) {
+    $('#left-link').attr("href", data);
 });
 
 
