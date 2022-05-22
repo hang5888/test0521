@@ -180,7 +180,9 @@
     .title p {
         font-size: 15px;
     }
-    
+    .histroy_img{
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 821px) {
@@ -281,11 +283,12 @@
     
     .histroy_button {
         text-align: center;
-        padding: 0px;
+        padding: 30px;
     }
 
     .histroy_img img {
         width: 90%;
         height: auto;
     }
+    
 }

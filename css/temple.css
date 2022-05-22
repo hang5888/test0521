@@ -125,6 +125,7 @@
 }
 .information a{
     color: black;
+    word-break: break-all;
 }
 
 /*地圖*/

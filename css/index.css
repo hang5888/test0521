@@ -25,6 +25,10 @@
 }
 
 /* FB */
+.news{
+    position: relative;
+    z-index: 5;
+}
 .news h2 {
     padding-top: 0px;
     padding-bottom: 30px;
@@ -34,12 +38,15 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.news a{
+    text-decoration:none;
+}
 
 /* 石龜景點 */
 .all_turtle {
     position: relative;
     top: -250px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .turtle {
